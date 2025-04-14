@@ -1,4 +1,5 @@
-Summary of the scripts and the overall procedure:
+** Summary of the scripts and the overall procedure:
+
 1) Training: compute PR scaling weights and distrubance feedback gains by running 'PR_scaling_disturbance_feedback_design.m'
 2) Calibration & tightening: compute robustness tightening parameters by computing quantiles and Lipschitz constants of predicates by running 'Calibrate_quantile_compute_tightening_parameters.m' and 'Lipschitz_constants.m' 
 3) Distributed implementation: Run 'distributed_STL_control_ten_agents_example.m', which uses inputs from above and utilizes the functions 'compute_10_agents_three_edges.m', 'compute_10_agents_two_edges.m' to solve local agent-level synthesis problem (see Alg. 2 in the paper) at every itearation.
