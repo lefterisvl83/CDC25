@@ -38,7 +38,6 @@ A = eye(2); %
 B = eye(2); % 
 
 %% Tightenig
-% E is compute from 'comparison_of_error_bounds_with_CDC24.m'
 E = Polyhedron([eye(2);-eye(2)],[ones(4,1)*0.9737]);
 %
 % define Workspace X
