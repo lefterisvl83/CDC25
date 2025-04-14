@@ -1,4 +1,4 @@
-** Summary of the scripts and the overall procedure:
+## Summary of the scripts and the overall procedure:
 
 1) Training: compute PR scaling weights and distrubance feedback gains by running 'PR_scaling_disturbance_feedback_design.m'
 2) Calibration & tightening: compute robustness tightening parameters by computing quantiles and Lipschitz constants of predicates by running 'Calibrate_quantile_compute_tightening_parameters.m' and 'Lipschitz_constants.m' 
