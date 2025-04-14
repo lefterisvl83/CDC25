@@ -6,9 +6,6 @@ L = calculateLipschitzConstant(X);
 % Output the Lipschitz constants
 disp(['Lipschitz constant: ', num2str(L)]);
 
-end
-
-
 % Function to calculate Lipschitz constant of a polyhedron
 function L = calculateLipschitzConstant(P)
     % P is a Polyhedron object
@@ -19,5 +16,4 @@ function L = calculateLipschitzConstant(P)
     L = norm(A, 'inf');
 end
 
-%
 end
